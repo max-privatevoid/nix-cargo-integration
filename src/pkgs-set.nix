@@ -71,7 +71,7 @@ in rec {
     ];
   };
   # dream2nix tools
-  dream2nix = sources.dream2nix.lib.init {
+  dream2nix = sources.dream2nix.lib2.init {
     config.projectRoot = root;
     pkgs = pkgsWithRust;
   };
