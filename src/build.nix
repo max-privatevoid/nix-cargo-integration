@@ -178,7 +178,6 @@
     inherit root memberName;
     pname = cargoPkg.name;
 
-    builder = dream2nix.builders.${system}.rust.${builder};
     packageOverrides =
       if builder == "crane"
       then craneOverrides
